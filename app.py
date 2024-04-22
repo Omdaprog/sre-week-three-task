@@ -13,7 +13,7 @@ def hello_world():
 
 def shutdown():
   try:
-    time.sleep(60)
+    time.sleep(10)
     func = request.environ.get('werkzeug.server.shutdown')
     if func is not None:
       func()
